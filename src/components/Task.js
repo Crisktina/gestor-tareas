@@ -10,7 +10,7 @@ function Task({ id, text, complet, completTask, deleteTask }) {
       <div className="tarea-texto" onClick={() => completTask(id)}>
         {text}
       </div>
-      <div className="tarea-contenedor-iconos">
+      <div className="tarea-contenedor-iconos" onClick={() => deleteTask(id)}>
         <AiOutlineCloseCircle className="tarea-icono" />
       </div>
     </div>
